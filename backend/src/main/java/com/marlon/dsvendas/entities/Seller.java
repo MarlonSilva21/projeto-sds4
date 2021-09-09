@@ -23,8 +23,10 @@ public class Seller {
 	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
 	
+	public Seller() { }
+	
 	public Seller(long id, String name) {
-		super();
+	
 		this.id = id;
 		this.name = name;
 	}
